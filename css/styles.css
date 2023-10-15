@@ -12,6 +12,7 @@ body {
     font-weight: 400;
     letter-spacing: 0.02em;
     line-height: 150%;
+    
 }
 h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
@@ -85,8 +86,11 @@ img {
     color: var(--SLATE, #434455);
 }
 .header{
-    border-bottom: 1px solid #e7e9fc;
     
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .address {
     font-style: normal;
@@ -309,8 +313,13 @@ img {
         justify-content: center;
 }
 
+.third-html-link:hover, .third-html-link:focus{
+    background-color: #404bbf;
+}
 
-
+.svg.third.html{
+    fill: #f4f4fd;
+}
 
 
 .fourth-html{
@@ -352,6 +361,16 @@ img {
         justify-content: center;
         color: #8E8F99;
 }
+
+.fourth-html-link:hover, .fourth-html-link:focus{
+    border-color: #404bbf;
+    color: #404bbf;
+}
+
+.svg-fourth-html{
+    fill: currentColor;
+}
+
 .images-list {
     background: var(--WHITE, #FFF);
     width: calc((100% - 72px) / 4);
@@ -500,15 +519,18 @@ img {
 .portfolio-section-one{
     padding: 96px 0 120px 0
 }
-.portfolio-image-link:hover {
+
+.portfolio-image-link{
+    display: block;
+}
+.portfolio-image-link:hover, .portfolio-image-link:focus {
     color: var(--OCEAN, #404BBF);
-    
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-image-link:focus {
-    color: var(--OCEAN, #404BBF);
-    
-}
+
 
 .portfolio-second-heading {
     color: var(--NAVY-BLUE, #2E2F42);
@@ -578,7 +600,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #F4F4FD;
+    color: #FFFFFF;
     margin-bottom: 16px;
 }
 
@@ -620,3 +642,6 @@ flex-direction: column;
         
 }
 
+.footer-svg{
+    fill: #f4f4fd;
+}
