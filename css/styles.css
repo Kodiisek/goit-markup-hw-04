@@ -320,9 +320,6 @@ img {
 .svg-third-html{
     fill: #f4f4fd;
 }
-.svg.third.html{
-    fill: #f4f4fd;
-}
 
 
 .fourth-html{
@@ -352,6 +349,11 @@ img {
 .fourth-html-point{
     width: calc((100% - 120px)/6);
         height: 88px;
+        
+}
+
+.fourth-html-point:hover, .fourth-html-point:focus{
+    
 }
 
 .fourth-html-link{
@@ -368,9 +370,14 @@ img {
 .fourth-html-link:hover, .fourth-html-link:focus{
     border-color: #404bbf;
     color: #404bbf;
+    
+    
 }
 
 .svg-fourth-html{
+    fill: currentColor;
+}
+.svg-fourth-html:focus, .svg-fourth-html:hover{
     fill: currentColor;
 }
 
